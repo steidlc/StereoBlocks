@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+
+    <PreferenceCategory android:title="@string/pref_general_setting" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefExtraPiece"
+            android:summary="@string/pref_extra_piece_summary"
+            android:title="@string/pref_extra_piece" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefSoundEnabled"
+            android:summary="@string/pref_sound_effects_summary"
+            android:title="@string/pref_sound_effects" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_speed_setting" >    
+        <ListPreference
+            android:defaultValue="50"
+            android:key="prefMovingSpeed"
+            android:entries="@array/gameSpeedEntries"
+            android:summary="@string/pref_moving_speed_summary"
+            android:entryValues="@array/gameSpeedValues"
+            android:title="@string/pref_moving_speed" /> 
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSpeedAuto"
+            android:summary="@string/pref_auto_speed_summary"
+            android:title="@string/pref_auto_speed" >
+        </CheckBoxPreference>
+    </PreferenceCategory>   
+
+    <PreferenceCategory android:title="@string/pref_eye_setting" >    
+            <ListPreference
+            android:defaultValue="Static Only"
+            android:key="prefColorMix"
+            android:entries="@array/colorMixEntries"
+            android:summary="@string/pref_color_mix_summary"
+            android:entryValues="@array/colorMixEntries"
+            android:title="@string/pref_color_mix" />    
+            
+            <ListPreference
+            android:defaultValue="Dominant Only"
+            android:key="prefGameBorderMode"
+            android:entries="@array/gameBorderModeEntries"
+            android:summary="@string/pref_game_border_mode_summary"
+            android:entryValues="@array/gameBorderModeEntries"
+            android:title="@string/pref_game_border_mode" />    
+            
+	    <PreferenceScreen
+	        android:key="prefMovingButton"
+	        android:title="@string/pref_moving_obj_setting"
+	        android:persistent="false">
+	    <!--PreferenceCategory android:title="@string/pref_moving_obj_setting" -->        
+	        <ListPreference
+	            android:defaultValue="Red"
+	            android:key="prefMovingColor"
+	            android:entries="@array/gameColorValues"
+	            android:summary="@string/pref_moving_color_summary"
+	            android:entryValues="@array/gameColorValues"
+	            android:title="@string/pref_moving_color" />
+	        
+	        <ListPreference
+	            android:defaultValue="50"
+	            android:key="prefMovingSaturation"
+	            android:entries="@array/colorSaturationEntries"
+	            android:summary="@string/pref_moving_saturation_summary"
+	            android:entryValues="@array/colorSaturationValues"
+	            android:title="@string/pref_moving_saturation" />
+	        
+	        <EditTextPreference
+	            android:defaultValue="0"
+	            android:key="prefMovingXOffset"
+	            android:title="@string/pref_moving_x_offset"
+	            android:summary="@string/pref_moving_x_offset_summary"
+	            android:inputType="numberDecimal|numberSigned"/>
+	
+	        <EditTextPreference
+	            android:defaultValue="0"
+	            android:key="prefMovingYOffset"
+	            android:title="@string/pref_moving_y_offset"
+	            android:summary="@string/pref_moving_y_offset_summary"
+	            android:inputType="numberDecimal|numberSigned"/>  
+	          
+	    </PreferenceScreen>
+	
+	    <!-- PreferenceCategory android:title="@string/pref_static_obj_setting" -->
+	    <PreferenceScreen
+	        android:key="prefStaticButton"
+	        android:title="@string/pref_static_obj_setting"
+	        android:persistent="false">
+	        <ListPreference
+	            android:defaultValue="Blue"
+	            android:key="prefStaticColor"
+	            android:entries="@array/gameColorValues"
+	            android:summary="@string/pref_static_color_summary"
+	            android:entryValues="@array/gameColorValues"
+	            android:title="@string/pref_static_color" />
+	        
+	        <ListPreference
+	            android:defaultValue="50"
+	            android:key="prefStaticSaturation"
+	            android:entries="@array/colorSaturationEntries"
+	            android:summary="@string/pref_static_saturation_summary"
+	            android:entryValues="@array/colorSaturationValues"
+	            android:title="@string/pref_static_saturation" />  
+	        
+	        <EditTextPreference
+	            android:defaultValue="0"
+	            android:key="prefStaticXOffset"
+	            android:title="@string/pref_static_x_offset"
+	            android:summary="@string/pref_static_x_offset_summary"
+	            android:inputType="numberDecimal|numberSigned"/>
+	
+	        <EditTextPreference
+	            android:defaultValue="0"
+	            android:key="prefStaticYOffset"
+	            android:title="@string/pref_static_y_offset"
+	            android:summary="@string/pref_static_y_offset_summary"
+	            android:inputType="numberDecimal|numberSigned"/>
+	    </PreferenceScreen>
+    </PreferenceCategory>
+    
+    <com.stereopsis.stereoblocks.ResetDefDiagPref
+        android:dialogMessage="Revert all values to their defaults?"  
+        android:key="resetDialog"  
+        android:negativeButtonText="CANCEL"  
+        android:persistent="false"  
+        android:positiveButtonText="OK"  
+        android:summary="Reset all settings to their initial values."  
+        android:title="Reset to default" >  
+    </com.stereopsis.stereoblocks.ResetDefDiagPref>  
+</PreferenceScreen>

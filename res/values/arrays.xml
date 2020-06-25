@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+    <string-array name="gameBorderModeEntries">
+        <item name="Static">Dominant Only</item>
+        <item name="Both">Both</item>
+        <item name="Alternating">Alternating</item>
+        <item name="Mixed">Mixed</item>
+    </string-array>
+
+    <string-array name="colorMixValues">
+        <item name="Static">Static</item>
+        <item name="Both">Both</item>
+        <item name="Moving">Moving</item>
+        <item name="None">None</item>
+    </string-array>
+    
+    <string-array name="colorMixEntries">
+        <item name="Static">Static Only</item>
+        <item name="Both">Static and Moving</item>
+        <item name="Moving">Moving Only</item>
+        <item name="None">No Mixing</item>
+    </string-array>
+    
+    <string-array name="gameColorValues">
+        <item name="Red">Red</item>
+        <item name="Green">Green</item>
+        <item name="Blue">Blue</item>
+    </string-array>
+
+    <string-array name="gameSpeedEntries">
+        <item name="0">0% - Slowest</item>
+        <item name="10">10%</item>
+        <item name="20">20%</item>
+        <item name="30">30%</item>
+        <item name="40">40%</item>
+        <item name="50">50%</item>
+        <item name="60">60%</item>
+        <item name="70">70%</item>
+        <item name="80">80%</item>
+        <item name="90">90%</item>
+        <item name="100">100% - Fastest</item>
+    </string-array>
+
+    <string-array name="gameSpeedValues">
+        <item name="0">0</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+        <item name="40">40</item>
+        <item name="50">50</item>
+        <item name="60">60</item>
+        <item name="70">70</item>
+        <item name="80">80</item>
+        <item name="90">90</item>
+        <item name="100">100</item>
+    </string-array>
+    
+
+    <string-array name="colorSaturationEntries">
+        <item name="0">0% - Dimmest</item>
+        <item name="10">10%</item>
+        <item name="20">20%</item>
+        <item name="30">30%</item>
+        <item name="40">40%</item>
+        <item name="50">50%</item>
+        <item name="60">60%</item>
+        <item name="70">70%</item>
+        <item name="80">80%</item>
+        <item name="90">90%</item>
+        <item name="100">100% - Brightest</item>
+    </string-array>   
+    <string-array name="colorSaturationValues">
+        <item name="0">0</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+        <item name="40">40</item>
+        <item name="50">50</item>
+        <item name="60">60</item>
+        <item name="70">70</item>
+        <item name="80">80</item>
+        <item name="90">90</item>
+        <item name="100">100</item>
+    </string-array>
+</resources>

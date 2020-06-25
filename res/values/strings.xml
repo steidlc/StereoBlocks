@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stereo Blocks</string>
+
+    <string name="pref_extra_piece">Extra Pieces</string>
+    <string name="pref_extra_piece_summary">Enable extra block shapes</string>
+
+    <string name="pref_sound_effects">Sound Effects</string>
+    <string name="pref_sound_effects_summary">Enable sound effects</string>
+    
+    <string name="pref_color_mix">Block Color Mixing</string>
+    <string name="pref_color_mix_summary">Set how the moving and static blocks are mixed in color</string>
+        
+    <string name="pref_moving_speed">Starting Speed</string>
+    <string name="pref_moving_speed_summary">Set the speed of moving objects</string>
+    <string name="pref_auto_speed">Auto Speed Increase</string>
+    <string name="pref_auto_speed_summary">Automatically increase the game speed as rows are completed.</string>    
+ 
+    <string name="pref_game_border_mode">Game Border Mode</string>
+    <string name="pref_game_border_mode_summary">How the game is displayed to each eye</string>
+    
+    <string name="pref_moving_color">Lazy Eye Color</string>
+    <string name="pref_moving_color_summary">Set the color of the lazy eye objects</string>
+    <string name="pref_moving_saturation">Lazy Eye Color Saturation</string>
+    <string name="pref_moving_saturation_summary">Set the saturation of the color</string>    
+    <string name="pref_moving_x_offset">Lazy Eye Horizontal Offset</string>
+    <string name="pref_moving_x_offset_summary">Set the Horizontal offset of the lazy eye objects -100 to 100</string>
+    <string name="pref_moving_y_offset">Lazy Eye Vertical Offset</string>
+    <string name="pref_moving_y_offset_summary">Set the Vertical offset of the lazy eye objects -100 to 100</string>
+    
+    <string name="pref_static_color">Dominant Eye Color</string>
+    <string name="pref_static_color_summary">Set the color of the dominant eye objects</string>
+    <string name="pref_static_saturation">Dominant Eye Color Saturation</string>
+    <string name="pref_static_saturation_summary">Set the saturation of the color</string> 
+    <string name="pref_static_x_offset">Dominant Eye Horizontal Offset</string>
+    <string name="pref_static_x_offset_summary">Set the Horizontal offset of the dominant eye objects -100 to 100</string>
+    <string name="pref_static_y_offset">Dominant Eye Vertical Offset</string>
+    <string name="pref_static_y_offset_summary">Set the Vertical offset of the dominant eye objects -100 to 100</string>
+    
+    <!--
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+    -->
+    
+    <string name="pref_general_setting">General Settings</string>
+    <string name="pref_speed_setting">Game Speed Settings</string>
+    <string name="pref_eye_setting">Color and Offset Settings</string>
+    <string name="pref_moving_obj_setting">Lazy Eye Settings</string>
+    <string name="pref_static_obj_setting">Dominant Eye Settings</string>
+    
+</resources>
